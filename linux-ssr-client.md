@@ -1,7 +1,7 @@
 `centos-7下安装shadowsocks-client`
 
 ```bash
-1.安装pip
+1.安装pip #仅支持python2
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 python  get-pip.py
 #安装Pip
@@ -25,7 +25,7 @@ vim /etc/shadowsocks/shadowsocks.json
 }
 
 3.配置启动脚本
-vim /etc/shadowsocks/shadowsocks.json
+vim /usr/lib/systemd/system/shadowsocks.service
 [Unit]
 Description=Shadowsocks
 [Service]
