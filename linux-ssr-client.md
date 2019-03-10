@@ -61,7 +61,7 @@ vim /etc/privoxy/config
 forward-socks5t / 127.0.0.1:1080 . #转发到本地端口，注意最后有个点
 
 设置http、https代理
-vim 、/etc/profile
+vim  /etc/profile
 PROXY_HOST=127.0.0.1
 export all_proxy=http://$PROXY_HOST:8118
 export ftp_proxy=http://$PROXY_HOST:8118
